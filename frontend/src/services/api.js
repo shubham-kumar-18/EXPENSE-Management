@@ -3,7 +3,7 @@ import axios from "axios";
 // Local development uses the backend running on the same computer unless a
 // VITE_API_URL value is explicitly configured.
 const apiBaseUrl = (
-  import.meta.env.VITE_API_URL || "http://localhost:5002"
+  import.meta.env.VITE_API_URL || "https://expense-management-8ozj.onrender.com"
 ).replace(/\/$/, "");
 
 const api = axios.create({
